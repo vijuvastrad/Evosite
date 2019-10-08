@@ -1,0 +1,18 @@
+
+@mixin btn($color, $background) {
+  width: 90px;
+  background: $background;
+  color: $color;
+  font-family: $font1;
+  font-size: 9px;
+  border-radius: 17px;
+  padding: 8px 5px;
+  outline: none;
+  border: none;
+
+  a {
+    color: $color1;
+    font-family: $font1;
+    font-size: 8px;
+  }
+}
