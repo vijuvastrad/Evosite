@@ -1,0 +1,823 @@
+.wrapper:before {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #ec418f;
+  left: 0;
+  right: 0;
+  position: absolute;
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .wrapper:before {
+    display: none;
+  }
+}
+
+.wrapper .content-container {
+  width: 1070px;
+}
+
+@media (max-width: 800px) {
+  .wrapper .content-container {
+    width: 100%;
+  }
+}
+
+.wrapper .navbar {
+  padding: .2em 0 0 0;
+}
+
+.wrapper .navbar .navbar-brand {
+  position: relative;
+  height: 101px;
+  z-index: 0 !important;
+  background: white;
+  padding-top: 0;
+  padding-left: 80px;
+}
+
+.wrapper .navbar .navbar-brand .logo-text {
+  position: absolute;
+  top: 15%;
+  font-family: myriad-pro, sans-serif;
+  text-align: center;
+  color: white !important;
+  padding-left: 50px;
+}
+
+.wrapper .navbar .navbar-brand .logo-text h1 {
+  font-size: 33px !important;
+}
+
+.wrapper .navbar .navbar-brand .logo-text p {
+  font-size: 13px !important;
+  position: relative;
+  top: -6px;
+}
+
+@media (max-width: 800px) {
+  .wrapper .navbar .navbar-toggler-icon {
+    margin-left: 40px;
+  }
+}
+
+.wrapper .navbar-nav .nav-item:active a {
+  color: #ed4290;
+}
+
+.wrapper .navbar-nav .nav-item .nav-link {
+  font-size: 13px;
+  font-family: myriad-pro, sans-serif;
+  color: #898a8a;
+}
+
+.wrapper .navbar-nav .nav-item .dropdown-menu {
+  top: 188%;
+}
+
+.wrapper .navbar-nav .nav-item .dropdown-item:hover {
+  background: #e42891;
+}
+
+.wrapper .navbar-nav .nav-item .mega-menu {
+  width: 360px;
+  overflow: hidden;
+  background: rgba(236, 65, 143, 0.7);
+}
+
+.wrapper .navbar-nav .nav-item .mega-menu a {
+  color: white;
+  font-family: myriad-pro, sans-serif;
+  font-size: 12px;
+}
+
+.wrapper .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 24px;
+}
+
+.wrapper .social-icons li {
+  padding: 0 4px;
+}
+
+.wrapper .social-icons li .fa-search {
+  color: #ec418f;
+  font-size: 10px;
+}
+
+.wrapper .social-icons li a .media-icon {
+  color: white;
+  background: #ec418f !important;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+}
+
+.wrapper .social-icons li .search-box {
+  position: absolute;
+  top: 103px;
+  z-index: 20;
+  right: 8%;
+  width: 350px;
+  height: 79px !important;
+  line-height: 70px !important;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-top: 2px solid #ec418f;
+  background: white;
+  display: none;
+}
+
+.wrapper .social-icons li .search-box:before {
+  content: "";
+  position: absolute;
+  top: -28px;
+  right: 13px;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid #ec418f;
+}
+
+.wrapper .social-icons li .search-box input[type=text] {
+  margin-left: 50px;
+  width: 200px;
+  padding: 5px 10px;
+  border: 1px solid #ec418f;
+  outline: none;
+}
+
+.wrapper .social-icons li .search-box input[type=button] {
+  width: 80px;
+  padding: 5px 0;
+  background: #ec418f;
+  border: 1px solid #ec418f;
+  outline: none;
+  color: white;
+  margin-left: -6px;
+}
+
+.wrapper .dropdown-toggle:after {
+  margin-left: 0;
+  border: 0;
+}
+
+.banner {
+  background: url("/dist/image/Bitmap.png");
+  background-position: center;
+  height: 680px;
+  width: 100%;
+  z-index: 10;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.banner .Announcement {
+  background: rgba(236, 65, 143, 0.6);
+  line-height: 20px;
+  height: 45px;
+  line-height: 45px;
+  padding-left: 110px;
+  color: white;
+  font-family: myriad-pro, sans-serif;
+  font-size: 10px;
+}
+
+.banner .Announcement a {
+  color: #652e8d;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.banner .banner-text {
+  text-align: center;
+  padding-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  font-family: myriad-pro, sans-serif;
+}
+
+.banner .banner-text a {
+  color: white;
+  font-size: 12px;
+}
+
+.welcome-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 584px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 1031px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.welcome-content .welcome-text {
+  font-family: myriad-pro, sans-serif;
+  width: 55%;
+}
+
+.welcome-content .welcome-text .welcome-header {
+  color: #ed4290;
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
+.welcome-content .welcome-text .welcome-dark-text {
+  font-size: 15px;
+  color: #4e5050;
+}
+
+.welcome-content .welcome-text .welcome-light-text {
+  color: #898a8a;
+  font-size: 12px;
+  padding-bottom: 30px;
+}
+
+.welcome-content .welcome-text .btn1 {
+  width: 90px;
+  background: #ec418f;
+  color: white;
+  font-family: myriad-pro, sans-serif;
+  font-size: 9px;
+  border-radius: 17px;
+  padding: 8px 5px;
+  outline: none;
+  border: none;
+}
+
+.welcome-content .welcome-text .btn1 a {
+  color: white;
+  font-family: myriad-pro, sans-serif;
+  font-size: 8px;
+}
+
+.welcome-content .welcome-img .content-wrapper {
+  position: relative;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.welcome-content .welcome-img .content-wrapper:hover .overlay {
+  opacity: 1;
+}
+
+.welcome-content .welcome-img .content-wrapper .image {
+  height: 120px;
+  width: 100%;
+  display: block;
+}
+
+.welcome-content .welcome-img .content-wrapper .content {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  font-size: 14px;
+  font-family: myriad-pro, sans-serif;
+}
+
+.welcome-content .welcome-img .content-wrapper .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  background: rgba(93, 122, 64, 0.7);
+}
+
+.news-container {
+  background: #f37f2c;
+  padding: 80px 70px 70px 70px;
+  position: relative;
+  height: 740px;
+}
+
+.news-container .news-slider-header {
+  color: white;
+  padding: 22px;
+  font-family: myriad-pro, sans-serif;
+  font-size: 40px;
+}
+
+.news-container .card {
+  color: #4e5050;
+  padding: 20px 20px 10px 20px;
+  position: relative;
+  margin: 0 13px 0 13px;
+  font-family: myriad-pro, sans-serif;
+  font-size: 11px;
+  line-height: 1.7;
+  border-radius: 7px;
+  width: 310px;
+  height: 310px;
+}
+
+.news-container .card .card-date {
+  font-size: 9px;
+  padding-top: 10px;
+}
+
+.news-container .card h6 {
+  font-size: 14px;
+  position: relative;
+  top: -10px;
+  color: #4e5050;
+}
+
+.news-container .card p {
+  padding-top: 20px;
+}
+
+.news-container .card .second-card {
+  padding-top: 60px;
+}
+
+.news-container div.owl-nav {
+  color: #f8b280;
+  display: inline-block;
+  font-size: 5px;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-top: 50px;
+  height: 40px;
+}
+
+.news-container .slider-arrows {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  padding: 5px;
+  outline: none;
+  border: 1px solid #f8b280;
+}
+
+.news-container .slider-arrows:hover {
+  background: #642d8c;
+}
+
+.news-container .owl-prev,
+.news-container .owl-next {
+  position: absolute;
+}
+
+.news-container .owl-prev {
+  left: 42%;
+}
+
+.news-container .owl-next {
+  right: 42%;
+}
+
+.news-container .owl-dots {
+  text-align: center;
+  line-height: .4 !important;
+  margin-top: -42px;
+}
+
+.news-container .owl-dot {
+  display: inline-block;
+  height: 8px !important;
+  width: 8px !important;
+  background: white !important;
+  opacity: 0.8;
+  border-radius: 50%;
+  margin: 0px 8px 0;
+}
+
+.news-container .owl-dot.active {
+  background: #642d8c !important;
+}
+
+.news-container .news-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.news-container .news-btn .btn2 {
+  width: 90px;
+  background: #642d8c;
+  color: white;
+  font-family: myriad-pro, sans-serif;
+  font-size: 9px;
+  border-radius: 17px;
+  padding: 8px 5px;
+  outline: none;
+  border: none;
+  margin-top: 30px;
+}
+
+.news-container .news-btn .btn2 a {
+  color: white;
+  font-family: myriad-pro, sans-serif;
+  font-size: 8px;
+}
+
+.news-container .news-btn .view-all {
+  margin-left: 5px;
+  color: #a788be;
+}
+
+.calender-container {
+  height: 630px;
+  padding: 89px 70px 20px 70px;
+  position: relative;
+}
+
+.calender-container .Calendar-header {
+  color: #642d8c;
+  padding: 22px;
+  font-family: myriad-pro, sans-serif;
+  font-size: 40px;
+}
+
+.calender-container .months {
+  padding: 20px 15px;
+  position: relative;
+  margin: 0 13px 13px;
+  font-family: myriad-pro, sans-serif;
+  line-height: 1.7;
+  border-radius: 7px;
+}
+
+.calender-container .months .date-text {
+  color: #642d8c;
+}
+
+.calender-container .months .date-text .main-text {
+  font-size: 40px;
+}
+
+.calender-container .months .date-text .main-text small {
+  font-size: 15px;
+  color: #4e5050;
+}
+
+.calender-container .months .date-text .date-dots {
+  position: relative;
+  top: -18px;
+  left: -15px;
+}
+
+.calender-container .months .events {
+  color: #898a8a;
+  font-size: 10px;
+  position: relative;
+  left: -10px;
+}
+
+.calender-container .months .events li {
+  padding: 7px 0;
+}
+
+.calender-container .months .events li .fa-circle {
+  margin-right: 10px;
+  font-size: 7px;
+  color: #ced0d0;
+}
+
+.calender-container .months .events li span {
+  color: #642d8c;
+}
+
+.calender-container div.owl-nav {
+  color: #c9b6d7;
+  display: inline-block;
+  font-size: 5px;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-top: 20px;
+  height: 40px;
+}
+
+.calender-container .slider-arrows {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  padding: 5px;
+  outline: none;
+  border: 1px solid #c9b6d7;
+}
+
+.calender-container .slider-arrows:hover {
+  border: 1px solid #642d8c;
+  color: #642d8c;
+}
+
+.calender-container .owl-prev,
+.calender-container .owl-next {
+  position: absolute;
+}
+
+.calender-container .owl-prev {
+  left: 42%;
+}
+
+.calender-container .owl-next {
+  right: 42%;
+}
+
+.calender-container .owl-dots {
+  text-align: center;
+  line-height: .4 !important;
+  margin-top: -43px;
+  height: 40px;
+}
+
+.calender-container .owl-dot {
+  display: inline-block;
+  height: 8px !important;
+  width: 8px !important;
+  background: #c9b6d7 !important;
+  opacity: 0.8;
+  border-radius: 50%;
+  margin: 0px 8px 0;
+}
+
+.calender-container .owl-dot.active {
+  background: #642d8c !important;
+}
+
+.calender-container .calendar-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.calender-container .calendar-btn .btn3 {
+  width: 90px;
+  background: #642d8c;
+  color: white;
+  font-family: myriad-pro, sans-serif;
+  font-size: 9px;
+  border-radius: 17px;
+  padding: 8px 5px;
+  outline: none;
+  border: none;
+}
+
+.calender-container .calendar-btn .btn3 a {
+  color: white;
+  font-family: myriad-pro, sans-serif;
+  font-size: 8px;
+}
+
+.twitter-container {
+  background: #ec418f;
+  padding: 30px 0px 10px 90px;
+  position: relative;
+}
+
+.twitter-container .twitter-msg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  padding: 0 20px;
+  position: relative;
+  font-family: myriad-pro, sans-serif;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.twitter-container .twitter-msg .twitter-msg-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #f067a5;
+  padding: 12px;
+  position: relative;
+  bottom: -6px;
+  margin-right: 14px;
+}
+
+.twitter-container div.owl-nav {
+  color: white;
+  display: inline-block;
+  font-size: 5px;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-top: -40px;
+  height: 40px;
+}
+
+.twitter-container .slider-arrows {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  padding: 5px;
+  outline: none;
+  border: 1px solid white;
+}
+
+.twitter-container .owl-prev,
+.twitter-container .owl-next {
+  position: absolute;
+}
+
+.twitter-container .owl-prev {
+  left: 60%;
+}
+
+.twitter-container .owl-next {
+  right: 25%;
+}
+
+.twitter-container .owl-dots {
+  text-align: right;
+  padding-right: 310px;
+  line-height: .4 !important;
+  margin-top: -40px;
+  height: 40px;
+}
+
+.twitter-container .owl-dot {
+  display: inline-block;
+  height: 8px !important;
+  width: 8px !important;
+  background: #f5a0c7 !important;
+  opacity: 0.8;
+  border-radius: 50%;
+  margin: 0px 8px 0;
+}
+
+.twitter-container .owl-dot.active {
+  background: white !important;
+}
+
+.twitter-container .twitter-btn .btn4 {
+  width: 90px;
+  background: #f067a5;
+  color: white;
+  font-family: myriad-pro, sans-serif;
+  font-size: 9px;
+  border-radius: 17px;
+  padding: 8px 5px;
+  outline: none;
+  border: none;
+  margin-top: 10px;
+}
+
+.twitter-container .twitter-btn .btn4 a {
+  color: white;
+  font-family: myriad-pro, sans-serif;
+  font-size: 8px;
+}
+
+.footer-content {
+  background: #4d4e4e;
+  color: white;
+  font-family: myriad-pro, sans-serif;
+  margin-bottom: 90px;
+  height: 650px;
+}
+
+.footer-content a {
+  font-size: 10px;
+  color: white;
+  line-height: 2.5;
+}
+
+.footer-content #back-to-top-btn {
+  cursor: pointer;
+}
+
+.footer-content .back-to-top {
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.footer-content h3 {
+  font-size: 19px;
+  padding-top: 30px;
+}
+
+.footer-content .contact p {
+  font-size: 10px;
+  padding: 10px 0;
+  line-height: 3;
+}
+
+.footer-content .follow-us {
+  margin-top: 70px;
+}
+
+.footer-content .follow-us .footer-tweeter {
+  background: white;
+  color: #4d4e4e;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  padding: 6px;
+  margin-right: 15px;
+  position: relative;
+  bottom: -4px;
+}
+
+.footer-content .quick-Links p {
+  padding: 10px 0;
+}
+
+.footer-content .quick-Links p a {
+  line-height: 3;
+}
+
+.footer-content .quick-Links p .quick-Links-arrow {
+  margin-right: 5px;
+}
+
+.footer-content .map {
+  position: relative;
+  left: -37px;
+}
+
+.footer-content .map #map {
+  width: 360;
+  height: 270;
+  padding-top: 17px;
+}
+
+.footer-content .map .btn5 {
+  width: 90px;
+  background: #8b8c8c;
+  color: white;
+  font-family: myriad-pro, sans-serif;
+  font-size: 9px;
+  border-radius: 17px;
+  padding: 8px 5px;
+  outline: none;
+  border: none;
+  margin-top: 10px;
+}
+
+.footer-content .map .btn5 a {
+  color: white;
+  font-family: myriad-pro, sans-serif;
+  font-size: 8px;
+}
+
+.footer-content .map .direction-arrow {
+  margin-left: 5px;
+}
+
+.footer-content .copyRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px 50px 25px 0;
+  font-size: 8px;
+}
+
+.footer-content .copyRight li {
+  padding: 10px 5px;
+}
+
+.footer-content .copyRight li .copyright-separation {
+  font-size: 2.5px;
+  margin-right: 7px;
+  position: relative;
+  top: -2px;
+}
+/*# sourceMappingURL=app.css.map */
